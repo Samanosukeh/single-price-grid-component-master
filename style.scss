@@ -88,6 +88,7 @@ body {
                 background: var(--cyan);
                 padding: 40px;
                 word-wrap: break-word;
+                line-height: 2;
     
                 span {
                     font-size: 20px;
@@ -96,10 +97,13 @@ body {
                 button {
                     background: var(--bright-yellow);
                     border: none;
-                    padding: 4px 20px 4px 20px;
+                    margin-top: 20px;
+                    padding: 10px 0 10px 0;
+                    box-shadow: 2px 5px 15px 4px rgba(0, 0, 0, 0.15);
                     text-align: center;
                     border-radius: 5px;
                     font-size: 18px;
+                    width: 100%;
                     cursor: pointer;
     
                     transform: hover 2s;
@@ -114,11 +118,17 @@ body {
                 width: 50%;
                 padding: 40px;
                 word-wrap: break-word;
-                
-                p {
-                    font-size: 15px;
-                    line-height: 1.5;
-                    padding-right: 50px;
+                //line-height: 1.5;
+
+                ul {    
+                    margin-top: 14px;
+                    font-size: 14px;
+                    font-weight: 300;
+                    
+                    li {
+                        line-height: 1.5;
+                        list-style: none;
+                    }
                 }
     
                 background: var(--light-cyan);
