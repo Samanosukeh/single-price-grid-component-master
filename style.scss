@@ -1,0 +1,121 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+
+    font-family: Karla, sans-serif;
+}
+
+:root {
+    --white: white;
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: #4EBFB4;
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    
+}
+
+@media (max-width: 1440px) {
+    html {
+        font-size: 100%;//15px  reduzindo a fonte da tela
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 87.5%;//14px  reduzindo a fonte da tela
+    }
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-size: 16px;
+    background: var(--light-gray);
+
+    h1 {
+        color: var(--cyan);
+        font-size: 27px;
+    }
+
+    .subtitle {
+        color: var(--bright-yellow);
+        font-size: 22px;
+    }
+
+    .card {
+        // box-shadow: 50px 10px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 10%;
+        background: var(--white);
+        overflow: hidden;//avoid overlapping border-radius :)
+        
+        box-shadow: 0px 0px 23px 4px rgba(0, 0, 0, 0.10);
+
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 10px;
+
+        .row-up {
+            padding: 40px;
+            line-height: 1.8;
+    
+            .row-up-card-body {
+                color: var(--grayish-blue);
+            }
+        }
+        
+        //style the .row-bottom
+        .row-bottom {
+            display: flex;
+            
+            .col-left{
+                width: 50%;
+                background: var(--cyan);
+                padding: 40px;
+    
+                span {
+                    font-size: 20px;
+                }
+    
+                button {
+                    background: var(--bright-yellow);
+                    border: none;
+                    padding: 4px 20px 4px 20px;
+                    text-align: center;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    cursor: pointer;
+    
+                    transform: hover 2s;
+    
+                    &:hover {
+                        filter: brightness(0.9);
+                    }
+                }
+            }
+    
+            .col-right{
+                width: 50%;
+                padding: 40px;
+    
+                background: var(--light-cyan);
+            }
+        }
+    }
+
+}
+
+footer {
+    // position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
