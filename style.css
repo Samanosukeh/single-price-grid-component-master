@@ -49,25 +49,28 @@ body .subtitle {
 }
 
 body .card {
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 10%;
-  background: var(--white);
-  overflow: hidden;
-  -webkit-box-shadow: 0px 0px 23px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 23px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 650px;
+  margin-top: 10%;
+  background: var(--white);
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 23px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 23px 4px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
 }
 
 body .card .row-up {
   padding: 40px;
   line-height: 1.8;
+  width: 100%;
 }
 
 body .card .row-up .row-up-card-body {
@@ -84,6 +87,7 @@ body .card .row-bottom .col-left {
   width: 50%;
   background: var(--cyan);
   padding: 40px;
+  word-wrap: break-word;
 }
 
 body .card .row-bottom .col-left span {
@@ -110,7 +114,14 @@ body .card .row-bottom .col-left button:hover {
 body .card .row-bottom .col-right {
   width: 50%;
   padding: 40px;
+  word-wrap: break-word;
   background: var(--light-cyan);
+}
+
+body .card .row-bottom .col-right p {
+  font-size: 15px;
+  line-height: 1.5;
+  padding-right: 50px;
 }
 
 footer {

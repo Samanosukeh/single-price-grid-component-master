@@ -49,9 +49,15 @@ body {
     }
 
     .card {
-        // box-shadow: 50px 10px;
-        margin-left: 20%;
-        margin-right: 20%;
+        position: relative;
+        // display: flex;
+        justify-content: center;//alinhar no eixo X
+        align-items: center;//alinhar no eixo Y
+
+        width: 650px;
+
+        // margin-left: 20%;
+        // margin-right: 20%;
         margin-top: 10%;
         background: var(--white);
         overflow: hidden;//avoid overlapping border-radius :)
@@ -66,6 +72,7 @@ body {
         .row-up {
             padding: 40px;
             line-height: 1.8;
+            width: 100%;
     
             .row-up-card-body {
                 color: var(--grayish-blue);
@@ -80,6 +87,7 @@ body {
                 width: 50%;
                 background: var(--cyan);
                 padding: 40px;
+                word-wrap: break-word;
     
                 span {
                     font-size: 20px;
@@ -105,6 +113,13 @@ body {
             .col-right{
                 width: 50%;
                 padding: 40px;
+                word-wrap: break-word;
+                
+                p {
+                    font-size: 15px;
+                    line-height: 1.5;
+                    padding-right: 50px;
+                }
     
                 background: var(--light-cyan);
             }
