@@ -29,7 +29,7 @@ Users should be able to:
 - See a hover state on desktop for the Sign Up call-to-action
 
 ### Screenshot
-
+### My Solution
 <img src="https://github.com/Samanosukeh/single-price-grid-component-master/blob/master/images/result.PNG" width="100%" >
 
 
