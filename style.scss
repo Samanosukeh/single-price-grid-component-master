@@ -17,21 +17,33 @@
     
 }
 
-@media (max-width: 1440px) {
-    html {
-        font-size: 100%;//15px  reduzindo a fonte da tela
-    }
-}
+// @media (max-width: 1440px) {
+//     html {
+//         font-size: 100%;//15px  reduzindo a fonte da tela
+//     }
+// }
 
-@media (max-width: 375px) {
-    html {
-        font-size: 87.5%;//14px  reduzindo a fonte da tela
-    }
-}
+// @media (max-width: 375px) {
+//     html {
+//         font-size: 87.5%;//14px  reduzindo a fonte da tela
+//     }
+// }
 
-main {
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 99% !important;
+  }
+  main {
+      margin: 20px;
+  }
+  .column {
+    width: 100% !important;
+  }
+
+  .card {
+    width: auto !important;
+    margin: 2px;
+  }
 }
 
 body {
@@ -50,14 +62,10 @@ body {
 
     .card {
         position: relative;
-        // display: flex;
         justify-content: center;//alinhar no eixo X
         align-items: center;//alinhar no eixo Y
 
         width: 650px;
-
-        // margin-left: 20%;
-        // margin-right: 20%;
         margin-top: 10%;
         background: var(--white);
         overflow: hidden;//avoid overlapping border-radius :)
@@ -81,7 +89,11 @@ body {
         
         //style the .row-bottom
         .row-bottom {
-            display: flex;
+            // display: flex;
+
+            .column {
+                float: left;
+            }
             
             .col-left{
                 width: 50%;
@@ -90,14 +102,20 @@ body {
                 word-wrap: break-word;
                 line-height: 2;
     
-                span {
-                    font-size: 20px;
+                .span-1 {
+                    font-size: 32px;
+                    font-weight: 600;
+                }
+                .span-2 {
+                    margin-left: 20px;
+                    font-size: 16px;
+                    color: rgba(255, 255, 255, 0.60);
                 }
     
                 button {
                     background: var(--bright-yellow);
                     border: none;
-                    margin-top: 20px;
+                    margin-top: 8px;
                     padding: 10px 0 10px 0;
                     box-shadow: 2px 5px 15px 4px rgba(0, 0, 0, 0.15);
                     text-align: center;
@@ -128,6 +146,7 @@ body {
                     li {
                         line-height: 1.5;
                         list-style: none;
+                        color: rgba(255, 255, 255, 0.60);
                     }
                 }
     
