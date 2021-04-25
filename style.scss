@@ -23,7 +23,8 @@
     font-size: 99% !important;
   }
   main {
-      margin: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
   }
   .column {
     width: 100% !important;
@@ -54,6 +55,7 @@ body {
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        position: relative;
     }
 
     .card {
@@ -150,8 +152,17 @@ body {
 }
 
 footer {
-    // position: fixed;
-    bottom: 0;
+    position: absolute;
     justify-content: center;
     align-items: center;
+    bottom: 0;
+
+    p {
+        color: #000;
+        font-weight: 600;
+
+        a {
+            color:hsl(214, 97%, 47%);
+        }
+    }
 }
