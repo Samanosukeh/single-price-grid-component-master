@@ -17,19 +17,8 @@
     
 }
 
-// @media (max-width: 1440px) {
-//     html {
-//         font-size: 100%;//15px  reduzindo a fonte da tela
-//     }
-// }
 
-// @media (max-width: 375px) {
-//     html {
-//         font-size: 87.5%;//14px  reduzindo a fonte da tela
-//     }
-// }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   * {
     font-size: 99% !important;
   }
