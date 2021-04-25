@@ -10,7 +10,7 @@
 :root {
     --white: white;
     --cyan: hsl(179, 62%, 43%);
-    --light-cyan: #4EBFB4;
+    --light-cyan: #4ABEBD;
     --bright-yellow: hsl(71, 73%, 54%);
     --light-gray: hsl(204, 43%, 93%);
     --grayish-blue: hsl(218, 22%, 67%);
@@ -60,13 +60,16 @@ body {
         font-size: 22px;
     }
 
-    .card {
-        position: relative;
-        justify-content: center;//alinhar no eixo X
-        align-items: center;//alinhar no eixo Y
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
 
+    .card {
         width: 650px;
-        margin-top: 10%;
+        // margin-top: 10%;
         background: var(--white);
         overflow: hidden;//avoid overlapping border-radius :)
         
